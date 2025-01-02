@@ -1,0 +1,700 @@
+#===============================================================================================================
+# Loot Filter - for Path of Exile 2
+#===============================================================================================================
+# VERSION:  1.0
+# AUTHOR:   Edited by ArielVal
+
+## Unique
+Show
+    Rarity Unique
+    SetTextColor 175 96 37 255
+    SetBorderColor 175 96 37 255
+    SetBackgroundColor 53 13 13 255
+    PlayEffect Brown
+    MinimapIcon 1 Brown Star
+    SetFontSize 40
+    #PlayAlertSound 3 300
+CustomAlertSound "Tier B AraAra.mp3" 300
+
+## Mirror
+Show
+    Class "Currency"
+    BaseType "Mirror"
+    SetFontSize 45
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    #PlayAlertSound 6 300
+CustomAlertSound "Tier SS FUS-RO-DAH.mp3" 300
+
+## Perfect Jeweller's Orb
+Show
+    Class "Currency"
+    BaseType "Perfect Jeweller's Orb"
+    SetFontSize 45
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    #PlayAlertSound 6 300
+CustomAlertSound "Tier SS I-am-atomic-ASMR.mp3" 300
+
+## Divine Orb
+Show
+    Class "Currency"
+    BaseType "Divine"
+    SetFontSize 45
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    #PlayAlertSound 6 300
+#CustomAlertSound "Tier S yofukashi-no-uta.mp3" 300
+CustomAlertSound "Tier S+ Attack-on-titan.mp3" 300
+#CustomAlertSound "Tier SS I-am-atomic-ASMR.mp3" 300
+
+## "Distilled Isolation" "Distilled Suffering"
+Show
+    BaseType == "Distilled Isolation" "Distilled Suffering"
+    SetFontSize 45
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    #PlayAlertSound 6 300
+CustomAlertSound "Tier S Re-creators-Mamika.mp3" 300
+
+#--------------------------
+# Gold
+#--------------------------
+
+Show
+    AreaLevel >= 70
+    StackSize >= 1000
+    BaseType == "Gold"
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    PlayEffect Orange Temp
+
+Show
+    AreaLevel < 70
+    StackSize >= 500
+    BaseType == "Gold"
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    PlayEffect Orange Temp
+
+Show
+    BaseType == "Gold"
+    SetTextColor 180 180 180
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 0 0 0 180
+
+#--------------------------
+# Uncut Gems
+#--------------------------
+
+# Always make Spirit gems pop
+Show
+    BaseType "Uncut Spirit Gem"
+    SetTextColor 20 240 240
+    SetBorderColor 20 240 240
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Triangle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier C uwu.mp3" 300
+
+# Make support gems pop during campaign
+Show
+    AreaLevel < 68
+    BaseType "Uncut Support Gem"
+    SetTextColor 20 240 240
+    SetBorderColor 20 240 240
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Triangle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier C tuturu.mp3" 300
+
+# Make skill gems pop during campaign
+Show
+    AreaLevel < 65
+    BaseType "Uncut Skill Gem"
+    SetTextColor 20 240 240
+    SetBorderColor 20 240 240
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Triangle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier C Tatata.mp3" 300
+
+# Gems up to level 18 in maps don't get a special highlight
+Show
+    ItemLevel <= 18
+    BaseType "Uncut Skill Gem"
+    SetTextColor 20 240 240
+    SetBorderColor 20 240 240
+    SetFontSize 35
+CustomAlertSound "Tier B me-corro.mp3" 300
+#CustomAlertSound "Tier A yamate-kudasai.mp3" 300
+#CustomAlertSound "Tier A anime-ahh.mp3" 300
+
+Show
+    BaseType "Uncut Support Gem"
+    SetTextColor 20 240 240
+    SetBorderColor 20 240 240
+    SetFontSize 35
+CustomAlertSound "Tier B nyaa.mp3" 300
+
+## Level 19 gems and up in maps get a special highlight
+Show
+    ItemLevel = 19
+    BaseType "Uncut Skill Gem"
+    SetTextColor 20 240 240
+    SetBorderColor 20 240 240
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Triangle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A+ oooh-my-god.mp3" 300
+
+## Level 20 gems
+Show
+    ItemLevel = 20
+    BaseType "Uncut Skill Gem"
+    SetTextColor 20 240 240
+    SetBorderColor 20 240 240
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Triangle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier SS I-am-atomic-resound.mp3" 300
+
+#--------------------------
+# Socketables and Special Character Equipment
+#--------------------------
+
+# Special A Tier - League specific socketables and jewels
+Show 
+    BaseType "Soul Core" "Timeless"
+    SetTextColor 0 240 190
+    SetBorderColor 0 240 190
+    SetFontSize 45
+    MinimapIcon 0 Cyan Diamond
+    PlayEffect Cyan
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A+ gigachad-theme.mp3" 300   
+
+# Special Highlight - Breach Rings
+Show 
+    Rarity Rare
+    BaseType == "Breach Ring"
+    SetTextColor 0 240 190
+    SetBorderColor 0 240 190
+    SetFontSize 40
+    MinimapIcon 1 Cyan Diamond
+    PlayEffect Cyan
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A AraAra-low.mp3" 300
+
+Show 
+    Rarity <= Magic
+    BaseType == "Breach Ring"
+    SetTextColor 0 240 190
+    SetFontSize 35
+    MinimapIcon 2 Cyan Diamond
+    PlayEffect Cyan Temp
+
+# Special A Tier - Sanctum Relics
+Show 
+    Class "Relic"
+    SetTextColor 0 240 190
+    SetBorderColor 0 240 190
+    SetFontSize 40
+    MinimapIcon 1 Cyan Diamond
+    PlayEffect Cyan
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A+ Deep-ass-meow.mp3" 300
+
+# Special A Tier - Rare Jewels
+Show
+    Class "Jewel"
+    Rarity <= Rare
+    SetTextColor 0 240 190
+    SetBorderColor 0 240 190
+    SetFontSize 40
+    MinimapIcon 1 Cyan Diamond
+    PlayEffect Cyan
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A Anime-ahhh.mp3" 300
+
+# Special B Tier - Any Runes and Charms
+Show 
+    BaseType " Rune" "Golden Charm"
+    SetTextColor 0 240 190
+    PlayEffect Cyan Temp
+CustomAlertSound "Tier C Tatata.mp3" 200
+
+#--------------------------
+# Scroll of Wisdom High Level Hiding
+#--------------------------
+
+Hide
+    BaseType "Scroll of Wisdom"
+    AreaLevel >= 65
+    Rarity <= Magic
+
+#--------------------------
+# Socketables and Special Character Equipment
+#--------------------------
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+    Class "Currency"
+    BaseType "Orb of Annulment" "Orb of Chance" "Distilled Fear" "Distilled Despair"
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 240 90 35
+    PlayEffect White
+    MinimapIcon 1 Yellow Circle
+    SetFontSize 45
+    #PlayAlertSound 1 300
+CustomAlertSound "Tier A yamate-kudasai.mp3" 300
+
+Show
+    Class "Currency"
+    BaseType "Greater Jeweller's Orb"
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 240 90 35
+    PlayEffect White
+    MinimapIcon 1 Yellow Circle
+    SetFontSize 45
+    #PlayAlertSound 1 300
+CustomAlertSound "Tier S yofukashi-no-uta.mp3" 300
+
+# Currency Tier B: Exalted
+Show
+    Class "Currency"
+    BaseType "Exotic Coinage" "Exalted Orb"
+    SetTextColor 255 207 92
+    SetBorderColor 255 207 92
+    SetBackgroundColor 76 51 12
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Circle
+    SetFontSize 45
+    #PlayAlertSound 2 300
+#CustomAlertSound "Tier S yofukashi-no-uta.mp3" 300
+CustomAlertSound "Tier S Ameno.mp3" 300
+
+## Gold Key
+Show
+    BaseType "Gold Key"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier B me-corro.mp3" 300
+
+## Silver Key
+Show
+    BaseType "Silver Key"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier C Tatata.mp3" 300
+
+## Bronze Key
+Show
+    BaseType "Bronze Key"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier F risa-de-ardilla.mp3" 300
+
+# Currency Tier B: Regal, Vaal ...
+## Chaos Orb
+Show
+    Class "Currency"
+    BaseType "Chaos Orb"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier B+ nyaa-V2.mp3" 300
+
+Show
+    Class "Currency"
+    BaseType "Gemcutter's Prism" "Vaal Orb"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier B Made-in-abys.mp3" 300
+
+Show
+    Class "Currency"
+    BaseType "Regal Orb" "Orb of Alchemy"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier C+ Frieren.mp3" 300
+
+Show
+    Class "Currency"
+    BaseType "Lesser Jeweller's Orb" "Artificer's Orb" "Glassblower's Bauble"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier C Tatata.mp3" 300
+
+Show
+    Class "Currency"
+    BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White Temp
+    MinimapIcon 1 White Kite
+    SetFontSize 35
+    #PlayAlertSound 2 100
+CustomAlertSound "Tier A Anime-ahh-low.mp3" 300
+
+## Omen
+Show
+    Class "Omen"
+    BaseType "Omen of"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A yamate-kudasai.mp3" 300
+
+Show
+    Class "Currency"
+    BaseType "Distilled" "Catalyst" "Essence of"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect White
+    MinimapIcon 2 White Circle
+    SetFontSize 40
+#PlayAlertSound 2 300
+CustomAlertSound "Tier D shubabababa.mp3" 300
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+    AreaLevel >= 70
+    Class "Currency"
+    BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+    SetTextColor 220 190 132
+    SetFontSize 35
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+    Class "Currency"
+    BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+    SetTextColor 220 190 132
+    MinimapIcon 2 Grey Circle
+    SetFontSize 35
+
+Show
+    Class "Currency"
+    BaseType "Scroll of Wisdom" "Shard"
+# Unknown currency
+Show
+    Class "Currency"
+    SetTextColor 255 207 132
+    SetBorderColor 255 207 132
+    SetBackgroundColor 76 51 12
+    PlayEffect Pink
+    MinimapIcon 1 White Circle
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier F ahhhghgh.mp3" 300
+
+## Pinnacle Keys
+Show
+    Class "Pinnacle Keys"
+    SetTextColor 255 207 255
+    SetBorderColor 255 207 255
+    SetBackgroundColor 65 20 80
+    PlayEffect White
+    MinimapIcon 1 Yellow Square
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A+ Deep-ass-meow.mp3" 300
+
+Show
+    BaseType "Simulacrum" " Tablet" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+    SetTextColor 255 207 255
+    SetBorderColor 255 207 255
+    SetBackgroundColor 65 20 80
+    PlayEffect Purple
+    MinimapIcon 1 Purple Square
+    SetFontSize 45
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier A AraAra-low.mp3" 300
+
+## Invitation
+Show
+    BaseType "Barya" "Ultimatum"
+    SetTextColor 255 207 255
+    SetBorderColor 255 207 255
+    SetBackgroundColor 65 20 80
+    PlayEffect Grey
+    MinimapIcon 1 Grey Square
+    SetFontSize 40
+    #PlayAlertSound 2 300
+CustomAlertSound "Tier B nyaa.mp3" 300
+
+#--------------------------
+# Waystones
+#--------------------------
+## Tier 15
+Show
+    BaseType "Waystone"
+	WaystoneTier = 15
+    Rarity <= Rare
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 200 200 200 255
+	PlayEffect Yellow
+	MinimapIcon 1 Red Square
+    #PlayAlertSound 5 300
+CustomAlertSound "Tier A+ gigachad-theme.mp3" 300
+
+## Tier 13-14
+Show
+    BaseType "Waystone"
+	WaystoneTier >= 13
+	WaystoneTier <= 14
+    Rarity <= Rare
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 200 200 200 255
+	PlayEffect Yellow
+	MinimapIcon 1 Red Square
+    #PlayAlertSound 5 300
+CustomAlertSound "Tier A+ Anime-ahhh-low.mp3" 300
+
+## Tier 10-12
+Show
+    BaseType "Waystone"
+	WaystoneTier >= 10
+	WaystoneTier <= 12
+    Rarity <= Rare
+	SetFontSize 40
+	SetTextColor 0 0 0 255
+	SetBackgroundColor 200 200 200 255
+	PlayEffect Yellow
+	MinimapIcon 1 Red Square
+    #PlayAlertSound 5 300
+CustomAlertSound "Tier A yamate-kudasai.mp3" 300
+
+Show
+    BaseType "Waystone"
+	WaystoneTier >= 6
+	WaystoneTier <= 9
+    Rarity <= Rare
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 20 20 0 255
+    PlayAlertSound 4 300
+    SetFontSize 40		
+	PlayEffect Pink
+	MinimapIcon 0 Pink Circle
+    #PlayAlertSound 4 300
+CustomAlertSound "Tier F ahhhghgh.mp3" 300
+
+Show
+    BaseType "Waystone"
+    Rarity <= Rare
+	WaystoneTier >= 1
+	WaystoneTier <= 5
+	SetFontSize 40
+    SetTextColor 255 255 255 255
+    SetBackgroundColor 20 20 0 255
+    PlayEffect White
+    MinimapIcon 1 White Square
+    #PlayAlertSound 4 300
+CustomAlertSound "Tier F risa-de-ardilla.mp3" 300
+
+#--------------------------
+# Value Rares
+#--------------------------
+
+Show
+    Class "Rings" "Amulets" "Belts"
+    Rarity Rare
+    SetFontSize 40
+    SetTextColor 233 206 75
+    SetBorderColor 233 206 75
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Diamond
+
+#--------------------------
+# Rings, Amulets, Belts
+#--------------------------
+
+Show
+    Rarity Normal
+    Class "Rings" "Amulets" "Belts"
+    SetFontSize 40
+
+Show
+    Class "Rings" "Amulets" "Belts"
+    Rarity Magic
+    SetFontSize 40
+
+#--------------------------
+# Salvagable Items
+#--------------------------
+
+Show
+    Sockets > 0
+    Rarity Normal
+    SetBorderColor 200 200 200
+    SetFontSize 35
+
+Show
+    Quality > 0
+    Rarity Normal
+    SetBorderColor 200 200 200
+    SetFontSize 35
+
+Show
+    Sockets > 0
+    Rarity Magic
+    SetBorderColor 0 0 200
+    SetFontSize 35
+
+Show
+    Quality > 0
+    Rarity Magic
+    SetBorderColor 0 0 200
+    SetFontSize 35
+
+#--------------------------
+# Random Rares
+#--------------------------
+
+## Uncomment this rule to hide low level rares in high level zones
+
+##   Late Game - Items Rare Filter 
+
+Hide
+    Rarity Rare
+    DropLevel < 50
+    AreaLevel > 72
+    SetFontSize 35
+
+Show
+    Rarity Rare
+    SetFontSize 35
+
+#--------------------------
+# Hide Rules (only high level), super light edition
+#--------------------------
+
+Hide
+    Quality = 0
+    AreaLevel > 70
+    Rarity <= Magic
+    Class "Flasks"
+
+Hide
+    AreaLevel >= 78
+    Rarity <= Magic
+    DropLevel < 65
+    Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+    AreaLevel > 75
+    Rarity <= Magic
+    DropLevel < 64
+    Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+    AreaLevel > 73
+    Rarity <= Magic
+    DropLevel < 60
+    Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+    AreaLevel > 72
+    Rarity <= Magic
+    DropLevel < 55
+    Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+# Quivers have some relevant bases at 50+ so we treat them different
+Hide
+    AreaLevel > 74
+    Rarity <= Magic
+    DropLevel < 50
+    Class "Quivers"
+
+Hide
+    AreaLevel > 70
+    Rarity <= Normal
+    DropLevel < 50
+    Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+#--------------------------
+# OPTIONAL RULES
+#--------------------------
+# TO ENABLE RULES, REMOVE THE # AT THE START OF THE LINE
+
+### OPTIONAL RULE: Hide random bases
+# REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
+
+Hide
+    Rarity <= Magic
+    Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+    AreaLevel >= 65
+
+### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
+
+Show
+    Rarity <= Magic
+    Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+    AreaLevel >= 65
+    DropLevel <= 50
+    SetBackgroundColor 0 0 0 125
+
+# --- #
+
+Show
+    BaseType == "Expert Laced Boots"
