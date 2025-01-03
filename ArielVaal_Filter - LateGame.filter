@@ -17,224 +17,81 @@ Show
     PlayAlertSound 3 200
     PlayEffect White
     MinimapIcon 1 Yellow Circle
-    SetFontSize 30
+    SetFontSize 50
+
+# Belts
+    Show
+    Class "Belts"
+    BaseType == "Heavy Belt"
+    Rarity == Normal
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 187 138 131
+    PlayAlertSound 3 200
+    PlayEffect White
+    MinimapIcon 1 Yellow Circle
+    SetFontSize 50
+
+
+# Rings
+Show
+    Class "Rings"
+    BaseType == "Sapphire Ring"
+    Rarity == Normal
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 187 138 131
+    PlayAlertSound 3 200
+    PlayEffect White
+    MinimapIcon 1 Yellow Circle
+    SetFontSize 50
 
 #------------------------------------------
 
 #Weapons
 
-# Primal Quiver
-Show
-    Class "Quivers"
-    Rarity == Normal
-    BaseType == "Primed Quiver" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Primal Quiver
-Show
-    Class "Quivers"
-    Rarity == Normal
-    BaseType == "Primed Quiver" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
 
 # Dual String Bow
 Show
-    Class "Bows"
-    Rarity == Rare
-    BaseType == "Expert Dualstring Bow" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
+Class "Bows"
+Rarity == Rare
+BaseType == "Expert Dualstring Bow" 
+ItemLevel >= 77
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 37 99 235
+PlayAlertSound 3 200
+PlayEffect White
+MinimapIcon 1 Yellow Circle
+SetFontSize 30
 
 # Dual String Bow
 Show
-    Class "Bows"
-    Rarity == Rare
-    BaseType == "Expert Dualstring Bow" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Expert Forlorn Crossbow
-Show
-    Class "Crossbows"
-    Rarity == Rare
-    BaseType == "Expert Forlorn Crossbow" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Expert Forlorn Crossbow
-Show
-    Class "Crossbows"
-    Rarity == Normal
-    BaseType == "Expert Forlorn Crossbow" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Expert Bombard Crossbow
-Show
-    Class "Crossbows"
-    Rarity == Normal
-    BaseType == "Expert Bombard Crossbow" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 2 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 50
-
-# Expert Bombard Crossbow
-Show
-    Class "Crossbows"
-    Rarity == Rare
-    BaseType == "Expert Bombard Crossbow" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Expert Bombard Crossbow
-Show
-    Class "Crossbows"
-    Rarity == Normal
-    BaseType == "Expert Bombard Crossbow" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Expert Slicing Quarterstaff
-Show
-    Class "Quarterstaves"
-    Rarity == Rare
-    BaseType == "Expert Slicing Quarterstaff" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-
-# Expert Slicing Quarterstaff
-Show
-    Class "Quarterstaves"
-    Rarity == Normal
-    BaseType == "Expert Slicing Quarterstaff" 
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
+Class "Bows"
+Rarity == Normal
+BaseType == "Expert Dualstring Bow" 
+ItemLevel >= 77
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 37 99 235
+PlayAlertSound 3 200
+PlayEffect White
+MinimapIcon 1 Yellow Circle
+SetFontSize 30
 
 # Attuned Wand
 Show
-    Class "Wands"
-    Rarity == Normal
-    BaseType == "Attuned Wand" "Siphoning Wand"
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-
-# Attuned Wand
-Show
-    Class "Wands"
-    Rarity == Rare
-    BaseType == "Attuned Wand" "Siphoning Wand"
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Rattling Sceptre y Omen Sceptre
-Show
-    Class "Sceptres"
-    Rarity == Rare
-    BaseType == "Omen Sceptre" "Rattling Sceptre"
-    ItemLevel >= 81
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-
-# Rattling Sceptre y Omen Sceptre
-Show
-    Class "Sceptres"
-    Rarity == Normal
-    BaseType == "Omen Sceptre" "Rattling Sceptre"
-    ItemLevel >= 81
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
+Class "Wands"
+Rarity == Normal
+BaseType == "Attuned Wand" "Siphoning Wand"
+ItemLevel >= 77
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 37 99 235
+PlayAlertSound 3 200
+PlayEffect White
+MinimapIcon 1 Yellow Circle
+SetFontSize 30
 
 #===============================================================#
 
@@ -257,7 +114,7 @@ Show
     PlayAlertSound 3 200
     PlayEffect White
     MinimapIcon 1 Yellow Circle
-    SetFontSize 30
+    SetFontSize 40
 
 # Amulets
 Show
@@ -269,7 +126,7 @@ Show
     PlayAlertSound 3 200
     PlayEffect White
     MinimapIcon 1 Yellow Circle
-    SetFontSize 30
+    SetFontSize 40
 
 # Belts
 Show
@@ -281,25 +138,10 @@ Show
     PlayAlertSound 3 200
     PlayEffect White
     MinimapIcon 1 Yellow Circle
-    SetFontSize 30
+    SetFontSize 40
 
 #===============================================================#
 
-#Armour
-
-# Helmets
-Show
-    Class "Helmets"
-    Rarity == Normal
-    BaseType == "Expert Feathered Tiara" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Hunter Hood" "Expert Swathed Cap" "Expert Felt Cap"
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
 
 # Helmets
 Show
@@ -315,67 +157,12 @@ Show
     MinimapIcon 1 Yellow Circle
     SetFontSize 30
 
-# Gloves
-Show
-    Class "Gloves"
-    Rarity == Normal
-    BaseType == "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Spined Bracers" "Expert Sectioned Bracers" "Expert Firm Bracers"
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Gloves
-Show
-    Class "Gloves"
-    Rarity == Rare
-    BaseType == "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Spined Bracers" "Expert Sectioned Bracers" "Expert Firm Bracers"
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Boots
-Show
-    Class "Boots"
-    Rarity == Normal
-    BaseType == "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Steeltoe Boots" "Expert Laced Boots" "Expert Lizardscale Boots"
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
 
 # Boots
 Show
     Class "Boots"
     Rarity == Rare
     BaseType == "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Steeltoe Boots" "Expert Laced Boots" "Expert Lizardscale Boots"
-    ItemLevel >= 77
-    SetTextColor 255 255 255 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 37 99 235
-    PlayAlertSound 3 200
-    PlayEffect White
-    MinimapIcon 1 Yellow Circle
-    SetFontSize 30
-
-# Body Armours
-Show
-    Class "Body Armours"
-    Rarity == Normal
-    BaseType == "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Studded Vest" "Expert Serpentscale Coat" "Expert Pathfinder Coat"
     ItemLevel >= 77
     SetTextColor 255 255 255 255
     SetBorderColor 255 255 255 255
@@ -501,21 +288,18 @@ Show
     PlayEffect Orange Temp
     MinimapIcon 2 White Cross
 
-Show
-    AreaLevel < 70
-    StackSize >= 500
+Hide
+    AreaLevel > 70
+    StackSize <= 250
     BaseType == "Gold"
     SetTextColor 255 255 255
     SetBorderColor 255 255 255
-    PlayEffect Orange Temp
-    MinimapIcon 2 White Cross
 
 Show
     BaseType == "Gold"
     SetTextColor 180 180 180
     SetBorderColor 0 0 0 255
     SetBackgroundColor 0 0 0 180
-    MinimapIcon 2 White Cross
 
 #---------------------------------------------------------------------------#
 # Uncut Gems
@@ -524,7 +308,7 @@ Show
 ## Level 20 gems
 Show
     ItemLevel = 20
-    BaseType "Uncut Skill Gem"  "Uncut Spirit Gem"
+    BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
     SetFontSize 45
     SetTextColor 255 0 0 255
     SetBorderColor 255 0 0 255
@@ -534,51 +318,16 @@ Show
     MinimapIcon 0 Red Star
 CustomAlertSound "Tier SS I-am-atomic-resound.mp3" 300
 
-# Always make Spirit gems pop
 Show
-    BaseType "Uncut Spirit Gem"
+    ItemLevel = 19
+    BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
     SetTextColor 20 240 240
     SetBorderColor 20 240 240
     PlayEffect Cyan
     MinimapIcon 1 Cyan Triangle
     SetFontSize 40
     #PlayAlertSound 2 300
-CustomAlertSound "Tier C uwu.mp3" 300
-
-# Make support gems pop during campaign
-Show
-    AreaLevel < 68
-    BaseType "Uncut Support Gem"
-    SetTextColor 20 240 240
-    SetBorderColor 20 240 240
-    PlayEffect Cyan
-    MinimapIcon 1 Cyan Triangle
-    SetFontSize 40
-    #PlayAlertSound 2 300
-CustomAlertSound "Tier C tuturu.mp3" 300
-
-# Make skill gems pop during campaign
-Show
-    AreaLevel < 68
-    BaseType "Uncut Skill Gem"
-    SetTextColor 20 240 240
-    SetBorderColor 20 240 240
-    PlayEffect Cyan
-    MinimapIcon 1 Cyan Triangle
-    SetFontSize 40
-    #PlayAlertSound 2 300
-CustomAlertSound "Tier C Tatata.mp3" 300
-
-# Gems up to level 18 in maps don't get a special highlight
-Show
-    ItemLevel <= 18
-    BaseType "Uncut Skill Gem"
-    SetTextColor 20 240 240
-    SetBorderColor 20 240 240
-    SetFontSize 35
-CustomAlertSound "Tier B me-corro.mp3" 300
-#CustomAlertSound "Tier A yamate-kudasai.mp3" 300
-#CustomAlertSound "Tier A anime-ahh.mp3" 300
+CustomAlertSound "Tier A+ oooh-my-god.mp3" 300
 
 Show
     BaseType "Uncut Support Gem"
@@ -587,17 +336,9 @@ Show
     SetFontSize 35
 CustomAlertSound "Tier B nyaa.mp3" 300
 
-## Level 19 gems and up in maps get a special highlight
-Show
-    ItemLevel = 19
-    BaseType "Uncut Skill Gem"
-    SetTextColor 20 240 240
-    SetBorderColor 20 240 240
-    PlayEffect Cyan
-    MinimapIcon 1 Cyan Triangle
-    SetFontSize 40
-    #PlayAlertSound 2 300
-CustomAlertSound "Tier A+ oooh-my-god.mp3" 300
+Hide
+    ItemLevel <= 18
+    BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -667,10 +408,13 @@ CustomAlertSound "Tier A Anime-ahhh.mp3" 300
 
 # Special B Tier - Any Runes and Charms
 Show 
-    BaseType " Rune" "Golden Charm"
+    BaseType "Golden Charm" "Iron Rune"
     SetTextColor 0 240 190
     PlayEffect Cyan Temp
 CustomAlertSound "Tier C Tatata.mp3" 200
+
+Hide 
+    BaseType "Body Rune" "Desert Rune" "Glacial Rune" "Inspiration Rune" "Mind Rune" "Rebirth Rune" "Stone Rune" "Storm Rune" "Vision Rune" "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Stone Charm" "Silver Charm" "Thawing Charm" "Staunching Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Amethyst Charm"
 
 #--------------------------
 # Scroll of Wisdom High Level Hiding
@@ -965,7 +709,7 @@ Show
     SetTextColor 255 255 255 255
     SetBackgroundColor 20 20 0 255
     PlayAlertSound 4 300
-    SetFontSize 40		
+    SetFontSize 30		
 	PlayEffect Pink
 	MinimapIcon 0 Pink Circle
     #PlayAlertSound 4 300
@@ -976,7 +720,7 @@ Show
     Rarity <= Rare
 	WaystoneTier >= 1
 	WaystoneTier <= 5
-	SetFontSize 40
+	SetFontSize 30
     SetTextColor 255 255 255 255
     SetBackgroundColor 20 20 0 255
     PlayEffect White
